@@ -19,7 +19,16 @@ This Python script demonstrates how to use the Seasonal Decomposition of Time Se
 - statsmodels
 - matplotlib
 
+## Installation
+
+You will need python installed and then install the requirements from the `requirements.txt` file:
+
+```
+pip install -r requirements.txt
+```
+
 ## Usage
+
 ```
 python yoy.py data_file [-d lookback] [-m] [-v value_column]
 ```
@@ -32,7 +41,8 @@ python yoy.py data_file [-d lookback] [-m] [-v value_column]
 ## Example
 
 ```
-python yoy.py example_data.csv -d 90 -m -v value
+python example.py # Generate example data and save it in example_data.csv
+python yoy.py example_data.csv -d 90
 ```
 
 This command will read the time series data from `example_data.csv`, analyze the last 90 days of data, show the STL model, and use the "value" column for analysis.
